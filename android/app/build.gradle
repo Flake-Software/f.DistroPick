@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'dev.flutter.flutter-gradle-plugin'
+}
+
+android {
+    namespace "com.flake.distropick"
+    compileSdkVersion 34
+    ndkVersion flutter.ndkVersion
+
+    defaultConfig {
+        applicationId "com.flake.distropick"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
