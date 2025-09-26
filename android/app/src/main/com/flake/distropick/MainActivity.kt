@@ -1,4 +1,4 @@
-package com.example.f_distro_pick
+package com.flake.pick.distro
 
 import io.flutter.embedding.android.FlutterActivity
 
